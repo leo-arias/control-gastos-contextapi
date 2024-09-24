@@ -113,6 +113,7 @@ export const budgetReducer = (state: BudgetState, action: BudgetActions) => {
         localStorage.removeItem("expenses");
 
         return {
+            ...state,
             budget: 0,
             modal: false,
             expenses: [],
